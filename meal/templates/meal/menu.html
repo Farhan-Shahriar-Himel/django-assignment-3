@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="container mx-auto my-12 text-center">
+    <h1 class="text-4xl font-bold mb-8"><u>Our menu</u></h1>
+
+    <section class="grid grid-cols-3 gap-4">
+    {% for item in categories %}
+        <div class="p-4 border brorder-black rounded-xl">
+            <img class="mb-4" src="{{item.strCategoryThumb}}" alt="">
+            <h1 class="font-bold text-xl"> {{item.strCategory}} </h1>
+            <p class="text-sm"> Product ID: {{item.idCategory}} </p>
+            <p> {{item.strCategoryDescription | truncatewords:10}} </p>
+        </div>
+    {% endfor %}
+    </section>
+</main>
+
+{% endblock content %}

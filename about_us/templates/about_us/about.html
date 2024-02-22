@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<main class="container mx-auto my-12">
+    <section class="flex gap-16">
+        <div class="text-center">
+            <img class="flex-1 w-[400px] h-[400px] rounded-full mb-4" src="{% static 'profile_img.jpg' %}" alt="profile img">
+            <h1 class="text-2xl font-bold">Md. Farhan Shahriar</h1>
+            <p class="text-xl">Chairman And CEO</p>
+            <p class="text-xl">Nazmira Industrial Park</p>
+        </div>
+    
+        <div class="flex-1 flex items-center">
+            <div class="space-y-4">
+                <h1 class="text-3xl font-bold">A Triumph of Persistence</h1>
+                <p>Our success is a testament to perseverance and collaboration. It reflects not just achievements, but the bonds we've forged and lessons learned. Together, we've scaled new heights, guided by vision and fueled by passion. As we celebrate, let's remain humble and committed to continuous growth, inspiring others to chart their own paths to greatness. Our journey of success is ongoing—a testament to courage, resilience, and unwavering determination.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}
